@@ -1,27 +1,27 @@
-## Overview
+# Overview
 
-#### Name of Team
+### Name of Team
 <p>MBS </p>
 
-#### Members of Team
+### Members of Team
 <p>Brandon Jaipersaud, brandojp@my.yorku.ca, Section B Lab03 </p>
 <p>Saba Yazdani, sabayzdn@my.yorku.ca, Section B Lab03 </p>
 <p>Mahnsi Ruparelia, mahnsi@my.yorku.ca, Section B Lab03 </p>
 
-#### Project Title
+### Project Title
 <p>What Number am I Thinking of Between 1 and X? </p>
 
-#### Project Descripton
+### Project Descripton
 <p>Our web page is a number guessing game. The server starts by randomly choosing a number between 1 and X, and hides it from the user. It then asks the user how many attempts they want to guess the number (number of attempts must be less than X). The server then prompts the user to guess what the number between 1 and X is, and if the user guesses correctly, the server congratulates them, asks the user for their name, and adds their name to a winners list. If they guess wrong, they are prompted to keep guessing until they run out of tries. Once the user runs out of tries, the game ends. </p>
 
-##### Edited After Zoom Meeting
+### Edited After Zoom Meeting
 <p>The server randomly chooses a number, x, that is between 1 and 100. There will be four modes: easy, medium, hard, and insane. Easy mode will give the user 25 guesses, medium will give 15, and hard will give 5. Insane mode is separate, with x between 1 and 1000 and the user only gets one guess.</p>
 <p>The leaderboard should be ordered with easy, medium, and hard buttons. It will list players with least amount of guesses taken as first place; if two players have the same amount of guesses for first place, list the players that have that same amount of guesses each in a separate line (so if there are three people that took one guess, have their names in first position, listed as personA, personB, personC, then if there are two people that took two guesses, have their names listed underneath in position 2, etc.) </p>
 
-#### Side Feature
+### Side Feature
 <p> Our side feature is a weather dashboard, which will display information about the client’s local weather. It will include temperature, cloudiness (sunny, partially cloudy, or cloudy), precipitation (rain, snow, etc.), and wind speed/direction. </p>
 
-#### Functional Requirements
+### Functional Requirements
 <p>1. Users can choose one of four modes to enter the game </p>
 <p>2. Users can repeatedly enter a number between 1 and 100 up to the amount allowed per game mode </p>
 <p>3. Users will receive a victory message if they win, or a failure message if they lose </p>
