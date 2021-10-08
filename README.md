@@ -16,7 +16,7 @@
 
 ### Edited After Zoom Meeting
 <p>The server randomly chooses a number, x, that is between 1 and 100. There will be four modes: easy, medium, hard, and insane. Easy mode will give the user 25 guesses, medium will give 15, and hard will give 5. Insane mode is separate, with x between 1 and 1000 and the user only gets one guess.</p>
-<p>The leaderboard should be ordered with easy, medium, and hard buttons. It will list players with least amount of guesses taken as first place; if two players have the same amount of guesses for first place, list the players that have that same amount of guesses each in a separate line (so if there are three people that took one guess, have their names in first position, listed as personA, personB, personC, then if there are two people that took two guesses, have their names listed underneath in position 2, etc.) </p>
+<p>The leaderboard will be ordered by the easy, medium, and hard modes. It will list players with least amount of guesses taken as first place; if two players have the same amount of guesses for first place, list the players that have that same amount of guesses each in a separate line (so if there are three people that took one guess, have their names in first position, listed as personA, personB, personC, then if there are two people that took two guesses, have their names listed underneath in position 2, etc.) </p>
 
 ### Side Feature
 <p> Our side feature is a weather dashboard, which will display information about the client’s local weather. It will include temperature, cloudiness (sunny, partially cloudy, or cloudy), precipitation (rain, snow, etc.), and wind speed/direction. </p>
