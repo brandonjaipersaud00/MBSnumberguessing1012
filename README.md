@@ -25,6 +25,7 @@
 <ol>
 <li> Users can choose one of four modes (easy, medium, hard, insane) by clicking the respective button to enter the game </li>
 <li> Users will repeatedly enter a number between 1 and 100 up to the amount allowed per game mode </li>
+<li> Users will stop entering numbers once they've guessed correctly, or once they've run out of tries</li>
 <li> Users will receive a victory message if they win, or a failure message if they lose </li>
 <li> Users can enter their name an unlimited amount of times into the respective leaderboard, but only their best score will be shown. If they achieve their best score twice, the most recent attempt will be shown </li>
 <li> The number of rankings avaliable on the leaderboard is equal to the number of tries in each mode </li>
@@ -35,5 +36,5 @@
 <li> Once the user completes the game, they can choose to either play the same mode again, select a different mode, or quit </li>
 <li> The side feature will update every 20 minutes automatically </li>
 <li> Users will be able to change the temperature between celsius and fahrenheit, and change the wind speed between kilometeres and miles, celsius and kilometeres will be the default</li>
-<li> The weather in Toronto will be shown by default and users can choose another major city from a drop-down menu in the side feature </li>
+<li> The weather in Toronto (or local?) will be shown by default and users can choose another major city from a drop-down menu in the side feature </li>
 </ol>
