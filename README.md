@@ -34,4 +34,4 @@
 <p>10. Once the user completes the game, they can choose to either play the same mode again, select a different mode, or quit </p>
 <p>11. The side feature will update every 20 minutes automatically </p>
 <p>12. Users will be able to change the temperature between celsius and fahrenheit, and change the wind speed between kilometers and miles </p>
-<p>13. Users can choose another major city from a drop-down menu in the side feature </p>
+<p>13. The weather in Toronto will be shown by default and users can choose another major city from a drop-down menu in the side feature </p>
