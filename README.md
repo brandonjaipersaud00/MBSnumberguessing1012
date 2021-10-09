@@ -22,7 +22,7 @@
 <p> Our side feature is a weather dashboard, which will display information about the client’s local weather. It will include temperature, cloudiness (sunny, partially cloudy, or cloudy), precipitation (rain, snow, etc.), and wind speed/direction. </p>
 
 ### Functional Requirements
-<p>1. Users can choose one of four modes to enter the game </p>
+<p>1. Users can choose one of four modes (easy, medium, hard, insane) by clicking the respective button to enter the game </p>
 <p>2. Users can repeatedly enter a number between 1 and 100 up to the amount allowed per game mode </p>
 <p>3. Users will receive a victory message if they win, or a failure message if they lose </p>
 <p>4. Users can enter their name an unlimited amount of times into the respective leaderboard, but only their best score will be shown. If they achieve their best score twice, the most recent attempt will be shown </p>
