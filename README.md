@@ -42,3 +42,6 @@
 <li> Celsius and kilometres will be the default settings in the weather side feature</li>
 <li> The weather in Toronto will be shown by default and users can choose another major city or their own location from a drop-down menu in the side feature </li>
 </ol>
+
+### Wireframes
+![Home Page](https://user-images.githubusercontent.com/92167279/140616653-b2d18572-fbc6-4bdc-961d-ec8b48291906.jpg)
