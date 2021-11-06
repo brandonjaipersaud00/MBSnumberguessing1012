@@ -45,3 +45,11 @@
 
 ### Wireframes
 ![Home Page](https://user-images.githubusercontent.com/92167279/140616653-b2d18572-fbc6-4bdc-961d-ec8b48291906.jpg)
+![PNG image1](https://user-images.githubusercontent.com/92176429/140617225-706a55bf-1926-4992-b4cc-19f77f67ea31.png)
+![PNG image2](https://user-images.githubusercontent.com/92176429/140617235-0994840d-2c26-44d9-89fc-5c51bf280c0a.png)
+![PNG image3](https://user-images.githubusercontent.com/92176429/140617239-46d1d28b-e97d-43b2-9558-5bb2512cdf53.png)
+![PNG image4](https://user-images.githubusercontent.com/92176429/140617250-19dbe043-85ed-469b-a486-26e4d6346d68.png)
+![PNG image5](https://user-images.githubusercontent.com/92176429/140617254-012bdad9-9ca2-4e48-8214-82380cc92a65.png)
+![PNG image6](https://user-images.githubusercontent.com/92176429/140617261-fd61f507-3b23-4cac-9117-3ba44e985857.png)
+
+
