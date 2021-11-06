@@ -45,11 +45,11 @@
 
 ### Wireframes
 ![Home Page](https://user-images.githubusercontent.com/92167279/140616653-b2d18572-fbc6-4bdc-961d-ec8b48291906.jpg)
-![PNG image1](https://user-images.githubusercontent.com/92176429/140617225-706a55bf-1926-4992-b4cc-19f77f67ea31.png)
-![PNG image2](https://user-images.githubusercontent.com/92176429/140617235-0994840d-2c26-44d9-89fc-5c51bf280c0a.png)
-![PNG image3](https://user-images.githubusercontent.com/92176429/140617239-46d1d28b-e97d-43b2-9558-5bb2512cdf53.png)
-![PNG image4](https://user-images.githubusercontent.com/92176429/140617250-19dbe043-85ed-469b-a486-26e4d6346d68.png)
-![PNG image5](https://user-images.githubusercontent.com/92176429/140617254-012bdad9-9ca2-4e48-8214-82380cc92a65.png)
-![PNG image6](https://user-images.githubusercontent.com/92176429/140617261-fd61f507-3b23-4cac-9117-3ba44e985857.png)
+![How to play](https://user-images.githubusercontent.com/92176429/140617804-fa4ed063-194f-42ae-8686-fdb1d6af325b.png)
+![Leaderboard](https://user-images.githubusercontent.com/92176429/140617809-e5a0cafc-2a99-4760-9432-f33cd5c78f7c.png)
+![Insert Number Page](https://user-images.githubusercontent.com/92176429/140617818-e25206c6-2a35-4b3b-8e44-09ef6ea5525a.png)
+![Insert for Leaderboard Page](https://user-images.githubusercontent.com/92176429/140617824-7aa0c635-5ab8-4d86-8b9e-91601d0e928b.png)
+![Weather Side Feature](https://user-images.githubusercontent.com/92176429/140617831-8c6b05e2-e4da-45fb-85c9-8b6074bcaf63.png)
+![Connecting Arrows Wireframes](https://user-images.githubusercontent.com/92176429/140617836-2ed7134b-0062-43d2-a21b-a45ddfa0a21b.png)
 
 
