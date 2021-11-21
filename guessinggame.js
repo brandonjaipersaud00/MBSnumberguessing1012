@@ -1,4 +1,6 @@
 function Play() {
+  
+  var a;
 
 }
 
