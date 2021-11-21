@@ -12,4 +12,9 @@ function Leader() {
 
 }
 
+function Weather (){
+
+  
+}
+
 //haven't done much, was working on Lab 8
