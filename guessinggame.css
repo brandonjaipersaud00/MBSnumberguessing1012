@@ -1,8 +1,24 @@
-.nav {
-    border:2px;
-    border-color:purple;
-    padding: 10px;
+h1{
     text-align: center;
-    display: inline-block;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    padding: 10%;
 }
-/*haven't done much, was working on Lab 8*/
+
+nav {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+button {
+    background-color: cornflowerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-inline: 30px;
+    padding: 25px;
+    
+}
+
+
