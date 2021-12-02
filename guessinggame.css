@@ -8,12 +8,15 @@ h2{
 h1 {
     text-align: right;
     padding: 0%;
-    text-size-adjust: 60px;
 }
 
 nav {
     width: 100%;
     text-align: center;
+}
+
+body{
+    background-color: lavenderblush;
 
 }
 
@@ -26,3 +29,44 @@ button {
     padding: 25px;
     
 }
+/* Change color of button on hover */
+button:hover {background-color: lightskyblue;}
+
+
+/*dropdown menu */
+.dropbtn {
+
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkslateblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: lightsteelblue;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: lightskyblue;}
+
+  
