@@ -11,6 +11,27 @@ h1 {
     padding: 0%;
 }
 
+#header {
+  text-align:center;
+}
+
+/* styling for the how to page only */
+#howto {
+  margin: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+
+}
+
+/*styling for all back buttons only */
+#backbutton {
+  border-radius: 0px;
+  padding: 3px;
+  background-color: red;
+}
+
+
+
 nav {
     width: 100%;
     text-align: center;
