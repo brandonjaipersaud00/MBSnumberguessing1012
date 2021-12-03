@@ -18,14 +18,16 @@
 </header>
 
 <!--- dropdown menu for easy medium hard and insane---> 
+<!--- each button submits a different value based on the level (number of guesses)---> 
 <nav>
     <div class="dropdown">
     <button class="dropbtn">Play</button>
     <div class="dropdown-content">
-      <a onclick="window.location.href='guessinggamePlay.html'">Easy</a>
-      <a onclick="window.location.href='guessinggamePlay.html';">Medium</a>
-      <a onclick="window.location.href='guessinggamePlay.html';">Hard</a>
-      <a onclick="window.location.href='guessinggamePlay.html';">Insane</a>
+      <form action="guessinggamePlay.html" method="get">
+    <button id = drop name="level" type="submit" value="25">Easy</button>
+    <button id = drop name="level" type="submit" value="15">Medium</button>
+    <button id = drop name="level" type="submit" value="5">Hard</button>
+    </form>
     </div>
   </div>
 <!--- buttons for how to play and leaderboard. they each redirect to a new html page.---> 
@@ -35,3 +37,4 @@
 
 
 </body>
+
