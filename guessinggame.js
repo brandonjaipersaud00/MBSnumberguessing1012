@@ -4,6 +4,7 @@ var result = document.getElementById("result");
 var submit = document.getElementById("submit");
 var entry = document.getElementById("entry");
 var cnt = 1;
+var next;
 
 function Play() {
     var Uservalue = Number(entry.value);
@@ -17,6 +18,23 @@ function Play() {
       result.innerHTML = 'Wrong!';
     }
     cnt++;
+  }
+  submit.addEventListener('click', Play);
+
+
+  function Winner() {
+    entry.disabled = true;
+    submit.disabled = true;
+    next = document.createElement('button');
+    next.textContent = 'Home';
+  }
+
+
+  function GameOver() {
+    entry.disabled = true;
+    submit.disabled = true;
+    next = document.createElement('button');
+    next.textContent = 'Leaderboard Entry';
   }
 
 
