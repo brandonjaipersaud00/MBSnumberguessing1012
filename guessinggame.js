@@ -26,7 +26,7 @@ function Play() {
     entry.disabled = true;
     submit.disabled = true;
     next = document.createElement('button');
-    next.textContent = 'Home';
+    next.textContent = 'Leaderboard Entry';
   }
 
 
@@ -34,7 +34,7 @@ function Play() {
     entry.disabled = true;
     submit.disabled = true;
     next = document.createElement('button');
-    next.textContent = 'Leaderboard Entry';
+    next.textContent = 'Home';
   }
 
 
