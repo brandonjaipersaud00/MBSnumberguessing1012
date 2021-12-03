@@ -1,20 +1,15 @@
-function Play() {
+function Play(guesses) {
   
-  var a;
-
-}
-
-function HowTo() {
-
-}
-
-function Leader() {
-
-}
-
-function Weather (){
-
+    var x = guesses;
   
-}
-
-//haven't done much, was working on Lab 8
+  }
+  
+  
+  function Leader() {
+  
+  }
+  
+  function Weather (){
+  
+    
+  }
