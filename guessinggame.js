@@ -1,6 +1,7 @@
 var n = Math.floor(Math.random() * 100) + 1; //chosen random number
-
+n=6;
 var cnt = 1; //counter up to number of tries based on chosen game mode
+var tempcnt=cnt;
 var entry_tries = 1 //number of tries to get chosen number
 
 //gets the value of the level button (easy, med, hard, insane), extracts just the number part, and parses it to an integer
@@ -10,8 +11,30 @@ guessnumb = guessnumb.substring(7);
 guessnumb = parseInt(guessnumb);
 var tempguess = guessnumb;
 
+//circles 
+var h=0;
+var arr= [];
+arr.length=(guessnumb/5);
+    
+for (h=0; h<arr.length; h++){
+     arr[h]=["<p class = circle id='circlesleft' ></p>","<p class = circle id='circlesleft' ></p>","<p class = circle id='circlesleft' ></p>","<p class = circle id='circlesleft' ></p>","<p class = circle id='circlesleft' ></p>"];
+     
+  }
 
+
+function changeCircle(index, next){
+
+  arr[index][next]= "<p class = circlered id='circlesleft' ></p>";
+  document.getElementById("circlesleft").innerHTML = arr;
+
+}
+
+
+
+//play function
+var i=0;
 function Play() {
+  
   
   var entry = parseInt(document.getElementById("entry").value);
   if(entry === n) {
@@ -22,7 +45,16 @@ function Play() {
     entry_tries++;
     tempguess--;
     document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left";
+
+    //updates circles after each try
+    if(cnt>5){
+      tempcnt=1;
+      i++;
+    }
+    changeCircle(i,(tempcnt-1));
+
   }
+
 //if number of tries used reaches guessnumb (max number of tries allowed), game is over.
   if(cnt === guessnumb) {
     
@@ -30,6 +62,7 @@ function Play() {
     GameOver();
   }
   cnt++;
+  tempcnt++;
 }
   
 
@@ -49,7 +82,10 @@ function GameOver() {
       }
 
 
+
+function circlesOfGuesses(){
   
-  function Leader() {
+  document.getElementById("circlesleft").innerHTML = arr;
+
+}
   
-  }
