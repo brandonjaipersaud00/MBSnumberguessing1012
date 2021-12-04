@@ -32,6 +32,12 @@ h1 {
   background-color: red;
 }
 
+#startbutton {
+  border-radius: 0px;
+  padding: 3px;
+  background-color: green;
+}
+
 
 
 nav {
