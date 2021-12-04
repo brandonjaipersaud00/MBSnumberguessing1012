@@ -52,7 +52,8 @@ else {
     document.getElementById("output").innerHTML = 'Wrong!';
     entry_tries++;
     tempguess--;
-    document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left"; }
+    document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left"; 
+    document.getElementById("entry").value = "";}
 
   //updates circles after each try
   changeCircle(cnt-1);   
