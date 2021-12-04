@@ -1,4 +1,3 @@
-var x = document.getElementById("drop").value;
 var n = Math.floor(Math.random() * 10) + 1;
 var cnt = 1;
 var entry_tries = 1
