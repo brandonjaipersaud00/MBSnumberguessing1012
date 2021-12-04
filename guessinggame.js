@@ -40,6 +40,7 @@ function Play() {
     
     document.getElementById("output").innerHTML = 'GAME OVER';
     document.getElementById("guessesLeft").innerHTML = "You have 0 guesses left";
+    changeCircle(guessnumb-1);
     GameOver();
   }
 else {
@@ -80,5 +81,9 @@ function GameOver() {
 function circlesOfGuesses(){
   
   document.getElementById("circlesleft").innerHTML = arr;
+
+}
+
+function leaderDisplay(){
 
 }
