@@ -31,7 +31,6 @@ function changeCircle(index, next){
 
 
 
-//play function
 var i=0;
 function Play() {
   
@@ -40,11 +39,22 @@ function Play() {
   if(entry === n) {
     document.getElementById("output").innerHTML = 'That is correct! It took you ' + entry_tries + ' time(s) to guess it.';
     Winner();
-  }  else {
+  } 
+  else if(entry_tries === guessnumb) {
+    
+    document.getElementById("output").innerHTML = 'GAME OVER';
+    document.getElementById("guessesLeft").innerHTML = "You have 0 guesses left";
+    GameOver();
+  }
+else {
     document.getElementById("output").innerHTML = 'Wrong!';
     entry_tries++;
     tempguess--;
-    document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left";
+    document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left"; }
+
+     
+  cnt++;
+  tempcnt++;
 
     //updates circles after each try
     if(cnt>5){
@@ -56,14 +66,6 @@ function Play() {
   }
 
 //if number of tries used reaches guessnumb (max number of tries allowed), game is over.
-  if(cnt === guessnumb) {
-    
-    document.getElementById("output").innerHTML = 'GAME OVER';
-    GameOver();
-  }
-  cnt++;
-  tempcnt++;
-}
   
 
 
