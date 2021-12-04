@@ -1,41 +1,38 @@
 var x = document.getElementById("drop").value;
-var n = Math.floor(Math.random() * 100) + 1;
-var result = document.getElementById("result");
-var submit = document.getElementById("submit");
-var entry = document.getElementById("entry");
+var n = Math.floor(Math.random() * 10) + 1;
 var cnt = 1;
-var next;
+var entry_tries = 1
+
 
 function Play() {
-    var Uservalue = Number(entry.value);
-    if(Uservalue === n) {
-      result.innerHTML = 'That is correct!';
-      Winner();
-    } else if(Uservalue === 25) {
-      result.innerHTML = 'GAME OVER';
-      GameOver();
-    } else {
-      result.innerHTML = 'Wrong!';
-    }
-    cnt++;
+  var entry = parseInt(document.getElementById("entry").value);
+  if(entry === n) {
+    document.getElementById("output").innerHTML = 'That is correct! It took you ' + entry_tries + ' time(s) to guess it.';
+    Winner();
+  } else if(entry === 25) {
+    document.getElementById("output").innerHTML = 'GAME OVER';
+    GameOver();
+  } else {
+    document.getElementById("output").innerHTML = 'Wrong!';
+    entry_tries++;
   }
-  submit.addEventListener('click', Play);
+  cnt++;
+}
 
 
-  function Winner() {
-    entry.disabled = true;
-    submit.disabled = true;
-    next = document.createElement('button');
-    next.textContent = 'Leaderboard Entry';
-  }
+
+function Winner() {
+  document.getElementById("submit").disabled = true;
+  document.getElementbyId("Home").disabled = true;
+  document.getElementbyId("Leaderboard Entry").disabled = false;
+}
 
 
-  function GameOver() {
-    entry.disabled = true;
-    submit.disabled = true;
-    next = document.createElement('button');
-    next.textContent = 'Home';
-  }
+function GameOver() {
+    document.getElementById("submit").disabled = true;
+    document.getElementbyId("Home").disabled = false;
+    document.getElementbyId("Leaderboard Entry").disabled = true;
+      }
 
 
   

@@ -12,19 +12,21 @@
 <header>
     <button onclick="window.location.href='guessinggame.html'" >Back</button>
 
-<div>
-  <p>Enter your guess: </p><input type="text" id="entry" class="entry">
-    <input type="submit" value="Submit guess" id="submit">
-</div>
-<br>
-<div>
-  <p id="result"></p>
-</div>    
-
     <!--- play button---> 
     <h1>play</h1>
     <button onclick="Play()">Play</button>
 </header>
+
+<div>
+  <p>Enter your guess: </p><input type="text" id="entry" class="entry">
+  <input type="submit" id="submit" onclick="Play()">
+  <input id="Home" type="button" value="Home" onclick="window.location.href='guessinggame.html'">
+  <input id="Leaderboard Entry" type="button" value="Leaderboard Entry" onclick="window.location.href='leaderboard.html'">
+</div>
+<br>
+<div>
+    <p id="output"></p>
+</div>
 
 <!--- output that will be updated by javascript---> 
 <strong><p id="output">	</p></strong>
