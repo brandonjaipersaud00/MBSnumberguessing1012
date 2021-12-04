@@ -84,6 +84,3 @@ function circlesOfGuesses(){
 
 }
 
-function leaderDisplay(){
-
-}
