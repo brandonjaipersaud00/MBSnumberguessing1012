@@ -1,4 +1,5 @@
 var n = Math.floor(Math.random() * 100) + 1; //chosen random number
+n=6;
 var cnt = 1; //counter up to number of tries based on chosen game mode
 var entry_tries = 1 //number of tries to get chosen number
 
@@ -7,6 +8,7 @@ var guessnumb = document.getElementsByTagName("level").innerHTML = window.locati
 guessnumb.toString();
 guessnumb = guessnumb.substring(7);
 guessnumb = parseInt(guessnumb);
+var tempguess = guessnumb;
 
 
 function Play() {
@@ -18,10 +20,12 @@ function Play() {
   }  else {
     document.getElementById("output").innerHTML = 'Wrong!';
     entry_tries++;
+    tempguess--;
+    document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left";
   }
-
+//if number of tries used reaches guessnumb (max number of tries allowed), game is over.
   if(cnt === guessnumb) {
-    //!!ENTRY SHOULD BE EQUAL TO AMOUNT OF TRIES BASED ON CHOSEN GAME MODE!!
+    
     document.getElementById("output").innerHTML = 'GAME OVER';
     GameOver();
   }
