@@ -1,46 +1,41 @@
-var n = Math.floor(Math.random() * 100) + 1; //chosen random number
-var cnt = 1; //counter up to number of tries based on chosen game mode
-var entry_tries = 1 //number of tries to get chosen number
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> Guess the Number </title>
+  <link rel="stylesheet" type="text/css" href="guessinggame.css" title="style">
+  <script src="guessinggame.js"></script>
+</head>
+<body>
 
 
-function Play() {
-  var entry = parseInt(document.getElementById("entry").value);
-  if(entry === n) {
-    document.getElementById("output").innerHTML = 'That is correct! It took you ' + entry_tries + ' time(s) to guess it.';
-    Winner();
-  } else if(entry === 25) {
-    //!!ENTRY SHOULD BE EQUAL TO AMOUNT OF TRIES BASED ON CHOSEN GAME MODE!!
-    document.getElementById("output").innerHTML = 'GAME OVER';
-    GameOver();
-  } else {
-    document.getElementById("output").innerHTML = 'Wrong!';
-    entry_tries++;
-  }
-  cnt++;
-}
-
-
-//for disabling and enabling buttons
-function Winner() {
-  document.getElementById("submit").disabled = true;
-  document.getElementbyId("Home").disabled = true;
-  document.getElementbyId("Leaderboard Entry").disabled = false;
-}
-
-
-function GameOver() {
-    document.getElementById("submit").disabled = true;
-    document.getElementbyId("Home").disabled = false;
-    document.getElementbyId("Leaderboard Entry").disabled = true;
-      }
-
-
+<header>
+  <!--- weather widget (can be placeholder for now) ---> 
+    <h1><script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-c174dcb7-0545-4ec3-9713-ff143067c30d"></div></h1>
   
-  function Leader() {
-  
-  }
-  
-  function Weather (){
-  
-    
-  }
+  <h2>Guess the Number</h2>
+</header>
+
+<!--- dropdown menu for easy medium hard and insane---> 
+<!--- each button submits a different value based on the level (number of guesses)---> 
+<nav>
+    <div class="dropdown">
+    <button class="dropbtn">Play</button>
+    <div class="dropdown-content">
+      <form action="guessinggamePlay.html" method="get">
+    <button id = drop name="level" type="submit" value="25">Easy</button>
+    <button id = drop name="level" type="submit" value="15">Medium</button>
+    <button id = drop name="level" type="submit" value="5">Hard</button>
+    <button id = drop name="level" type="submit" value="1">Insane</button>
+    </form>
+    </div>
+  </div>
+<!--- buttons for how to play and leaderboard. they each redirect to a new html page.---> 
+    <button onclick="window.location.href='guessinggameHowTo.html'">How To Play</button>
+    <button onclick="window.location.href='guessinggameLeaderboard.html'">Leaderboard</button> 
+</nav>
+
+
+</body>
+
