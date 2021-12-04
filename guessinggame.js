@@ -18,6 +18,11 @@ for (h=0; h<arr.length; h++){
      arr[h]="<p class = circle id='circlesleft' ></p>"
   }
 
+window.onload = function(){
+  document.getElementById("circlesleft").innerHTML=arr;
+  document.getElementById("guessesLeft").innerHTML = "You have " + guessnumb + " guesses left";
+  document.getElementById("output").innerHTML = 'START';
+}
 
 function changeCircle(index){
 
