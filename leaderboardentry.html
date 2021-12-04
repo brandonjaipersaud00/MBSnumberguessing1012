@@ -5,20 +5,20 @@
   <title> Leaderboard Entry </title>
   <link rel="stylesheet" type="text/css" href="guessinggame.css" title="style">
 </head>
-  
+
+<header><h1 id=header>Enter Your Name</h1></header>
+ 
 <body>
-  <p> First Name:</p>
-  <input type="submit" id="submit">
+    <form id=leadentry action="guessinggameLeaderboard.html">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value=""><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="numentry">Number of Tries</label><br><br><br>
+        <button id=backbutton onclick="window.location.href='guessinggameLeaderboard.html'">Skip</button>
+        <input type="submit" value="Next">
+      </form>
 <br>
 <br>
-  <p> Last Name:</p>
-  <input type="submit" id="submit">
-<br>
-<br> 
-  <p> Number of Tries:</p>
-  entry_tries
-<br>
-<br>
-  <input id=" " type="button" value="Next" onclick="window.location.href='guessinggame.html'">
   </body>
 </html>
