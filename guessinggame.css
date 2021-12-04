@@ -18,8 +18,10 @@ h1 {
 /* styling for the how to page only */
 #howto {
   margin: 100px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 350px;
+  margin-right: 350px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
