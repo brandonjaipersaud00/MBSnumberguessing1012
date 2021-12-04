@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <title> Guessing Game </title>
   <script src="guessinggame.js"></script>
+  <link rel="stylesheet" type="text/css" href="guessinggame.css" title="style">
 
 </head>
 <body>
 
 <!---back button to go back to main page---> 
 <header>
-    <button onclick="window.location.href='guessinggame.html'" >Back</button>
-
-    <!--- play button---> 
-    <h1>Play</h1>
+    <button id = backbutton onclick="window.location.href='guessinggame.html'" >Back</button>
 </header>
+
+</br>
+<button id= startbutton onclick=startGuess()> Start </button>
+
+<strong><p id="starting">	</p></strong>
 
 <div>
   <p>Enter your guess: </p>
