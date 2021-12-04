@@ -1,6 +1,6 @@
-var n = Math.floor(Math.random() * 10) + 1;
-var cnt = 1;
-var entry_tries = 1
+var n = Math.floor(Math.random() * 100) + 1; //chosen random number
+var cnt = 1; //counter up to number of tries based on chosen game mode
+var entry_tries = 1 //number of tries to get chosen number
 
 
 function Play() {
@@ -9,6 +9,7 @@ function Play() {
     document.getElementById("output").innerHTML = 'That is correct! It took you ' + entry_tries + ' time(s) to guess it.';
     Winner();
   } else if(entry === 25) {
+    //!!ENTRY SHOULD BE EQUAL TO AMOUNT OF TRIES BASED ON CHOSEN GAME MODE!!
     document.getElementById("output").innerHTML = 'GAME OVER';
     GameOver();
   } else {
@@ -19,7 +20,7 @@ function Play() {
 }
 
 
-
+//for disabling and enabling buttons
 function Winner() {
   document.getElementById("submit").disabled = true;
   document.getElementbyId("Home").disabled = true;
