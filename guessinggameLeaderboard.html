@@ -1,20 +1,49 @@
-//gets name that was entered
-const params = (new URL(document.location)).searchParams;
-var fname=params.get("fname");
-var lname=params.get("lname");
+<!DOCTYPE html>
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> Leaderboard</title>
+  <link rel="stylesheet" type="text/css" href="guessinggame.css" title="style">
+  <script src="guessinggameLeaderboard.js"></script>
+</head>
+<body>
 
-//gets number of entries that was entered
-var numentry = params.get("numentry");
 
-//array 
-var leaderboard = [ fname, lname, numentry ];
+<header>
+    <button id=backbutton onclick="window.location.href='guessinggame.html'" >Home</button>
+    <h1 id = header>Leaderboard</h1>
+    <nav id=leadernav>
+    <button onclick = printLeaderBoard()>Easy</button>
+    <button onclick = printLeaderBoard()>Medium</button>
+    <button onclick = printLeaderBoard()>Hard</button>
+  </nav>
 
-//prints the leaderboard with the name that was entered  and score
-window.onload = function(){
-    document.getElementById("name1").innerHTML = fname + " " + lname;
-    document.getElementById("score1").innerHTML = numentry;
-}
+</header>
 
-leaderboard.sort(function(a,b){
-    return parseFloat(a.numentry) - parseFloat(b.numentry);
-})
+
+
+<div id="container">
+  <div class="row">
+      <div class="name" id="name1">Player1</div><div class ="score" id="score1"></div>
+  </div>
+  
+  <div class="row">
+      <div class="name">Player2</div><div class ="score" id="score2"></div>
+  </div>
+  
+  <div class="row">
+      <div class="name">Player3</div><div class ="score" id="score3"></div>
+  </div>
+  
+  <div class="row">
+      <div class="name">Player4</div><div class ="score" id="score4"></div>
+  </div>
+  
+  <div class="row">
+      <div class="name">Player5</div><div class ="score" id="score5"></div>
+  </div>
+</div>
+
+
+
+</body>
