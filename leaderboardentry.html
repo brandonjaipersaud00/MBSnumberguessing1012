@@ -6,7 +6,10 @@
   <link rel="stylesheet" type="text/css" href="guessinggame.css" title="style">
 </head>
 
-<header><h1 id=header>Enter Your Name</h1></header>
+<header>
+    <button id=backbutton onclick="window.location.href='guessinggame.html'">Home</button>
+    <h1 id=header>Enter Your Name</h1>
+</header>
  
 <body>
     <form id=leadentry action="guessinggameLeaderboard.html">
@@ -16,7 +19,7 @@
         <input type="text" id="lname" name="lname" value=""><br><br>
         <label for="numentry">Enter number of Tries:</label>
         <input type="text" id="lname" name="numentry" value=""><br><br>
-        <button id=backbutton onclick="window.location.href='guessinggame.html'">Skip</button>
+        <button id=backbutton>Skip</button>
         <input type="submit" value="Next">
       </form>
 <br>
