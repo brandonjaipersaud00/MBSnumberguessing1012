@@ -2,10 +2,9 @@ var n = Math.floor(Math.random() * 100) + 1; //chosen random number
 var cnt = 1; //counter up to number of tries based on chosen game mode
 var entry_tries = 1 //number of tries to get chosen number
 
-//gets the value of the level button (easy, med, hard, insane), extracts just the number part, and parses it to an integer
-var guessnumb = document.getElementsByTagName("level").innerHTML = window.location.search;
-guessnumb.toString();
-guessnumb = guessnumb.substring(7);
+//gets the value of the level button (easy, med, hard, insane), and parses it to an integer
+const params = (new URL(document.location)).searchParams;
+var guessnumb=params.get("level");
 guessnumb = parseInt(guessnumb);
 var tempguess = guessnumb;
 
