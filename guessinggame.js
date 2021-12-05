@@ -8,6 +8,7 @@ var guessnumb=params.get("level");
 guessnumb = parseInt(guessnumb);
 var tempguess = guessnumb;
 
+
 //circles 
 var h=0;
 var arr= [];
@@ -21,7 +22,9 @@ window.onload = function(){
   document.getElementById("circlesleft").innerHTML=arr;
   document.getElementById("guessesLeft").innerHTML = "You have " + guessnumb + " guesses left";
   document.getElementById("output").innerHTML = 'START';
+  document.getElementById("LeaderboardEntry").disabled = true;
 }
+
 
 function changeCircle(index){
 
@@ -39,6 +42,7 @@ function Play() {
   if(entry === n) {
     document.getElementById("output").innerHTML = 'That is correct! It took you ' + entry_tries + ' time(s) to guess it.';
     Winner();
+    
   } 
   else if(entry_tries === guessnumb) {
     
@@ -52,16 +56,15 @@ else {
     entry_tries++;
     tempguess--;
     document.getElementById("guessesLeft").innerHTML = "You have " + tempguess + " guesses left"; 
-    document.getElementById("entry").value = "";}
-
+    document.getElementById("entry").value = "";
+}
   //updates circles after each try
   changeCircle(cnt-1);   
 
-  cnt++;
-
-    
+  cnt++;   
 
   }
+
 
 //if number of tries used reaches guessnumb (max number of tries allowed), game is over.
   
@@ -70,22 +73,20 @@ else {
 //for disabling and enabling buttons
 function Winner() {
   document.getElementById("submit").disabled = true;
-  document.getElementbyId("Home").disabled = true;
-  document.getElementbyId("Leaderboard Entry").disabled = false;
+  document.getElementById("LeaderboardEntry").disabled = false;
 }
 
 
 function GameOver() {
     document.getElementById("submit").disabled = true;
-    document.getElementbyId("Home").disabled = false;
-    document.getElementbyId("Leaderboard Entry").disabled = true;
+    document.getElementById("Home").disabled = false;
+    document.getElementById("LeaderboardEntry").disabled = true;
       }
 
 
 
 function circlesOfGuesses(){
-  
+
   document.getElementById("circlesleft").innerHTML = arr;
 
 }
-
