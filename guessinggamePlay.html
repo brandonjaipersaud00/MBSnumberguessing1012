@@ -12,11 +12,12 @@
 <!---back button to go back to main page--> 
 <header>
     <button id = backbutton onclick="window.location.href='guessinggame.html'" >Home</button>
+    <h1 id=weather><script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-c174dcb7-0545-4ec3-9713-ff143067c30d"></div></h1>
 </header>
 
 </br>
 <!--<button id= startbutton onclick=Play()> Start </button>-->
-
 
 
 <div class= playpage>
@@ -31,12 +32,11 @@
 <div class=submission>
   <input type="text" id="entry" class="entry" value="">
   <input type="submit" id="submit" onclick="Play()">
-  <input id="Home" type="button" value="Home" onclick="window.location.href='guessinggame.html'">
-  <input id="Leaderboard Entry" type="button" value="Leaderboard Entry" onclick="window.location.href='leaderboardentry.html'">
+  <button id="LeaderboardEntry" class = "LeaderboardEntry" onclick="window.location.href='leaderboardentry.html'">Leaderboard Entry</button>
 </div>
 
-<!--- output that will be updated by javascript---> 
-<strong><p id="output">	</p></strong>
+<!--- output that will be updated by javascript
+<strong><p id="output">	</p></strong>-->
 
 
 
